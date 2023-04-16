@@ -140,7 +140,7 @@ const Modal: React.FC<ModalProps> = ({
                     <Button
                       disabled={disabled}
                       label={secondaryActionlabel}
-                      onClick={secondaryAction}
+                      onClick={handleSecondaryAction}
                       outline
                     />
                   )}
@@ -151,6 +151,7 @@ const Modal: React.FC<ModalProps> = ({
                     outline={false}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
